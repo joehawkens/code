@@ -1,6 +1,4 @@
-# Code:
-# Contains all my solutions from solved Codewars problems.
-## Key:
-### 7 - 8 kyu   EASY
-### 4 - 6 kyu   MEDIUM
-### 1 - 3 kyu   HARD
+# Overview
+
+## This is a repository where I store my solved code problems. The problems come from different websites - mainly Leetcode and Codewars.
+## I try to practice them daily while being a full-time student.

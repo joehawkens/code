@@ -1,6 +1,6 @@
 # Python
 
-# Problem: check to see if two arguments are both the same case (upper or lower)
+# Problem: check to see if two parameters are both the same case (upper or lower)
 
 # Example:
 # A + B = 1
@@ -35,3 +35,18 @@ def same_case(a, b):
     else:
         
         return -1
+
+
+# TESTS ====================================================
+
+
+assert same_case("a", "b") == 1
+assert same_case("B", "b") == 0
+assert same_case("c", "c") == 1
+assert same_case("??", "") == -1
+print("All tests passed.")
+
+
+# OPTIMIZATION ==============================================
+
+

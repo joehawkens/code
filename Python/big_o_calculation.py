@@ -1,3 +1,5 @@
+import timeit
+
 # What is Big-O?
 
 # The measure of an algorithm's efficiency.
@@ -21,6 +23,9 @@ def add_numbers(a,b):
 # O(1) + O(1) + O(1) = O(1) Constant Time
 
 
+
+# O(log n) - Logarithmic Time - Cutting the data size each iteration ==============================================================================
+
 # O(n) - Linear time (loops) ======================================================================================================================
 
 def find_number(list, target):
@@ -36,6 +41,10 @@ def find_number(list, target):
             print("Number not in list.") # O(1) - Constant Time
 
 # O(n) + O(1) + O(1) =  O(n) Linear Time (Uses a loop)
+
+
+
+
 
 
 
@@ -59,3 +68,22 @@ def find_letter_in_word_in_list(list, letter):
 
 # O(n^2) + O(1) + O(1) = O(n^2)
 
+
+
+# Timing the speed of an algorithm:
+
+def loop_function(n):
+
+    total = 0
+
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                total += (i*j*k)
+    
+    print(total)
+
+time = timeit.timeit("loop_function(100)", number = 5, globals=globals()) / 10 * 1000
+
+
+print (f"Time in milliseconds = {time}")

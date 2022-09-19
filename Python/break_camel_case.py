@@ -26,6 +26,7 @@ def breakCamelCase(string):
     
     return newString
 
+# Time Complexity = O(n)
 # TESTS ============================================================
 
 assert breakCamelCase("camelCase") == "camel Case"

@@ -11,3 +11,12 @@
 ;; Type "clj" into powershell, go into directory, load file:
 ;; (load-file "task-1.clj")
 ;; type (morning-greeting)
+
+
+(defn hello-to [person-name] ; Defining a function
+    (println (str "Hello " person-name))
+    (println (str "Goodbye " person-name)))
+
+
+
+(hello-to "joe") ; Calling a function.

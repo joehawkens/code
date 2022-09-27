@@ -13,4 +13,24 @@
 
 
 
-(hello-to "joe") ; Calling a function.
+;; (hello-to "joe") ; Calling a function.
+
+
+
+(defn gcf [a b] (
+
+    if ( = b 0)
+    (println a)
+    (gcf b (rem a b)))
+)
+
+
+;;;; Task 1 TESTS ;;;;;;;;;;;;;;;;;
+
+(gcf 1 0) ; 1
+(gcf 10 100) ; 10
+(gcf 18 27) ; 9
+
+;;;; Task 2 TEST ;;;;;;;;;;;;;;;;;;
+
+(gcf 480 1001) ; 1

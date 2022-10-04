@@ -20,3 +20,25 @@
 
 
 (hello-to "joe") ; Calling a function.
+
+
+
+
+; If statement:
+
+(defn is-small? [number]
+
+    (if (< number 100) "yes" "no"))
+  
+  user=> (is-small? 50)
+  "yes"
+  
+  user=> (is-small? 500)
+  "no"
+
+
+; Running commands:
+
+
+(is_zero? 10) ;proper format to run code, with argument.
+

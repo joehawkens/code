@@ -13,4 +13,9 @@
 
 (defn is_prime?[num]
 
-    (if(<= num 1) 0))
+    (if(and (= (rem num 1) 0) (= (rem num num) 0)) 1 0)
+    
+)
+
+
+
